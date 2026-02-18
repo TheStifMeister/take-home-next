@@ -18,9 +18,9 @@ export default function PostsSearch({ posts }: Props) {
 
   return (
     <div className="mt-8">
-      <label className="block text-sm font-medium text-foreground">
+      <div className="block text-sm font-medium text-foreground">
         Cerca nei post
-      </label>
+      </div>
 
       <input
         value={query}
@@ -29,7 +29,7 @@ export default function PostsSearch({ posts }: Props) {
         className="mt-2 w-full rounded-xl border border-zinc-300 bg-background px-4 py-3 text-foreground shadow-sm"
       />
       <div className="mt-3 text-sm text-zinc-500">
-        Mostrati:<span className="font-medium">{filteredPosts.length}</span> /{" "}
+        Mostrati: <span className="font-medium">{filteredPosts.length}</span> /{" "}
         {posts.length}
       </div>
 

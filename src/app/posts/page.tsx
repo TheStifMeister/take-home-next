@@ -1,5 +1,6 @@
 import { Post } from "@/types/post";
 import PostsList from "@/components/PostsList";
+import PostsSearch from "@/components/PostsSearch";
 
 export default async function PostsPage() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -19,7 +20,7 @@ export default async function PostsPage() {
         <h2 className="text-base text-center text-zinc-400 sm:text-lg">
           Posts fetched from JSONPlaceholder
         </h2>
-        <PostsList posts={posts} />
+        <PostsSearch posts={posts} />
       </div>
     </div>
   );
